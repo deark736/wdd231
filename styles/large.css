@@ -1,0 +1,48 @@
+/* large.css */
+@media screen and (min-width: 768px) {
+    header {
+      padding: 1rem 2rem;
+    }
+  
+    /* Show nav horizontally on large screens */
+    nav.closed {
+      display: block;
+    }
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+    nav li a {
+      padding: 0.5rem 1rem;
+    }
+  
+    .header-container {
+      justify-content: flex-start;
+    }
+    .hamburger {
+      display: none; /* hide hamburger on large screens */
+    }
+  
+    /* Apply grid only to the grid-content container */
+    .grid-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+  
+    section {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 4px;
+    }
+  
+    /* 2-column layout for course cards on larger screens */
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+  

@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+  <meta charset="utf-8">
+  <title>Ka Kan Ho - WDD 231</title>
+  <meta name="description" content="WDD 231 Course Home Page">
+  <meta name="author" content="Ka Kan Ho">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+
+  <!-- JavaScript Files (deferred) -->
+  <script defer src="scripts/navigation.js"></script>
+  <script defer src="scripts/date.js"></script>
+  <script defer src="scripts/courses.js"></script>
 </head>
 <body>
-    <h1>WDD 231 - Ho</h1>
+
+  <header>
+    <div class="header-container">
+      <!-- Small Profile Photo -->
+      <img src="images/profile.jpeg" alt="Profile of Ka Kan Ho" class="profile-pic">
+      
+      <!-- Your Name rendered using a span -->
+      <span class="header-name">Ka Kan Ho</span>
+
+      <!-- Hamburger Menu Button -->
+      <button id="hamburgerBtn" class="hamburger" aria-label="Menu">&#9776;</button>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav id="mainNav" class="closed">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <div class="grid-content">
+      <!-- Section 1 -->
+      <section>
+        <h2>Welcome</h2>
+        <ul>
+          <li>Item One</li>
+          <li>Item Two</li>
+          <li>Item Three</li>
+        </ul>
+      </section>
+      <!-- Section 2 -->
+      <section>
+        <h2>Hong Kong Skyline</h2>
+        <figure>
+          <img src="images/hongkong.webp" alt="Hong Kong Skyline" loading="lazy">
+          <figcaption>Hong Kong Skyline</figcaption>
+        </figure>          
+      </section>
+      <!-- Section 3 -->
+      <section>
+        <h2>Web and Computer Programming Certificate</h2>
+        <!-- Filter Buttons -->
+        <div class="filters">
+          <button id="allBtn">All</button>
+          <button id="cseBtn">CSE</button>
+          <button id="wddBtn">WDD</button>
+        </div>
+        <!-- Course Cards get inserted here by JS -->
+        <div id="cards" class="cards"></div>
+        <!-- Display total credits dynamically -->
+        <p>Total Credits: <span id="totalCredits">0</span></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <!-- First paragraph -->
+    <p>
+      &copy;<span id="currentYear"></span>
+      <span id="myName">Ka Kan Ho</span>
+      <span id="myLocation">Hong Kong</span>
+    </p>
+    <!-- Second paragraph: last modified date (filled by JS) -->
+    <p id="lastModified"></p>
+  </footer>
+
 </body>
 </html>
