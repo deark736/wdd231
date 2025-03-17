@@ -1,0 +1,85 @@
+/* Reset some basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body styling */
+  body {
+    /* Choose your own font stack here, e.g. Google Fonts */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  
+    /* Background can be a solid color or a gradient */
+    background: linear-gradient(90deg, #e8eaf6 0%, #ede7f6 100%);
+    color: #333;
+  
+    /* Add padding around the entire page */
+    padding: 1rem;
+  }
+  
+  /* Header styling */
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    /* Choose a larger font size for the title */
+    font-size: 2rem;
+    /* Pick a highlight color for the heading text */
+    color: #5e35b1;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Grid layout for the cards container */
+  #cards {
+    /* Use a responsive grid that wraps automatically */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* Styling for each prophet card */
+  #cards section {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+  
+    /* Add a subtle border and box shadow to separate each card */
+    border: 2px solid #673ab7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    text-align: center;
+  }
+  
+  /* Prophet name styling */
+  #cards section h2 {
+    color: #512da8;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Additional paragraph styling for birth info */
+  #cards section p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  /* Image styling within each card */
+  #cards img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
