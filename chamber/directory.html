@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hong Kong Chamber of Commerce Directory</title>
+  <meta name="description" content="Directory of local businesses in Hong Kong, brought to you by the Hong Kong Chamber of Commerce." />
+  <meta name="author" content="Ka Kan Ho" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="Hong Kong Chamber of Commerce Directory" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://deark736.github.io/wdd231/chamber/images/hongkong_night.jpg" />
+  <meta property="og:url" content="https://deark736.github.io/wdd231/chamber/directory.html" />
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+
+  <!-- Import Playfair Display for Headings -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Import Montserrat for Body Text -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/skyline_resized_150px.png" alt="Chamber of Commerce Logo">
+      <h1>Hong Kong Chamber of Commerce</h1>
+    </div>
+    <!-- Hamburger Button -->
+    <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+    
+    <nav>
+      <ul>
+        <!-- Navigation updated to match the wireframe's reduced links -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Business Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="about.html">About</a></li>
+        <!-- Removed 'podcast.html' and 'events.html' to match wireframe -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- View Toggle Section -->
+    <section class="view-toggle">
+      <button id="grid">⏹️ Grid View</button>
+      <button id="list">📄 List View</button>
+    </section>
+    <hr>
+    
+    <!-- Member Cards Container -->
+    <article id="memberContainer" class="grid">
+      <!-- Member data will be dynamically injected here via JavaScript -->
+    </article>
+  </main>
+
+  <footer>
+    <p>Contact: info@hkchamber.hk</p>
+    <p>WDD 231 | Last Modified: <span id="lastModified"></span></p>
+    <p>&copy; <span id="currentYear"></span> Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>

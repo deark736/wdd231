@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Harbour Finance Ltd.",
+      "address": "12 Queen's Road Central, Hong Kong",
+      "phone": "852-1234-5678",
+      "website": "https://www.harbourfinance.hk",
+      "image": "logo_hf.png",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Victoria Trading Ltd.",
+      "address": "456 Des Voeux Road Central, Hong Kong",
+      "phone": "852-8765-4321",
+      "website": "https://www.victoriatrading.hk",
+      "image": "logo_vt.png",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Kowloon Enterprises",
+      "address": "789 Nathan Road, Kowloon, Hong Kong",
+      "phone": "852-2345-6789",
+      "website": "https://www.kowloonenterprises.hk",
+      "image": "logo_ke.png",
+      "membershipLevel": "Member"
+    },
+    {
+      "name": "Peak Innovations",
+      "address": "321 Peak Road, Central, Hong Kong",
+      "phone": "852-3456-7890",
+      "website": "https://www.peakinnovations.hk",
+      "image": "logo_pi.png",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Harbour View Holdings",
+      "address": "654 Harbour Road, Hong Kong Island, Hong Kong",
+      "phone": "852-4567-8901",
+      "website": "https://www.harbourview.hk",
+      "image": "logo_hv.png",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Cityscape Solutions",
+      "address": "987 Connaught Road, Tsim Sha Tsui, Hong Kong",
+      "phone": "852-5678-9012",
+      "website": "https://www.cityscapesolutions.hk",
+      "image": "logo_cs.png",
+      "membershipLevel": "Member"
+    },
+    {
+      "name": "Dragon Capital Services",
+      "address": "135 Hennessy Road, Wan Chai, Hong Kong",
+      "phone": "852-6789-0123",
+      "website": "https://www.dragoncapital.hk",
+      "image": "logo_dc.png",
+      "membershipLevel": "Gold"
+    }
+  ]  

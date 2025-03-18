@@ -1,0 +1,196 @@
+/* ========== GLOBAL STYLES ========== */
+body {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Use Playfair Display for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+  
+header, footer {
+    background-color: #004080;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative; /* Allows us to position hamburger button if needed */
+}
+  
+/* ========== NAVIGATION ========== */
+nav {
+    /* By default, show the nav in a row for larger screens */
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 1rem; /* space between nav items */
+}
+  
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px; /* optional for a nicer look */
+}
+  
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+  
+/* Highlight the active page */
+nav ul li a.active {
+    background-color: #DAA520;
+    color: #000; /* switch to black text */
+}    
+  
+/* ========== HAMBURGER MENU ========== */
+.menu-toggle {
+    display: none; /* Hidden on larger screens by default */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+}
+  
+/* Hide the nav by default on small screens */
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block; /* Show the hamburger button on small screens */
+    }
+    
+    /* Initially hide the nav list */
+    nav ul {
+        display: none;
+        flex-direction: column; 
+        align-items: center;
+        background-color: #004080; /* so it blends with the header color */
+        margin-top: 1rem;
+    }
+  
+    /* 
+      When nav is toggled, we add a class of .show 
+      to nav ul so it becomes visible 
+    */
+    nav ul.show {
+        display: flex;
+    }
+}
+  
+/* ========== VIEW TOGGLE SECTION ========== */
+.view-toggle {
+    text-align: center;
+    margin: 1rem 0;
+}
+  
+.view-toggle button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    background-color: #66b3ff; /* lighter blue for better contrast */
+    color: #000; /* black text */
+    cursor: pointer;
+    border-radius: 5px;
+}    
+  
+.view-toggle button:hover {
+    background-color: #ff3b3b; /* lighter red for improved contrast */
+    color: #000; /* keeping black text for consistency */
+}    
+  
+/* ========== MEMBER CONTAINER STYLES ========== */
+#memberContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+  
+/* ========== MEMBER CARD STYLES ========== */
+.member-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
+  
+.member-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+  
+.member-card h3 {
+    margin: 0.5rem 0;
+}
+  
+/* ========== LIST VIEW STYLING ========== */
+#memberContainer.list {
+    display: block;
+}
+  
+#memberContainer.list .member-card {
+  display: grid;
+  grid-template-columns: 
+    100px /* for the image */ 
+    1fr    /* for the name */ 
+    2fr    /* for the address */ 
+    1fr    /* for the phone */ 
+    1fr    /* for the website */ 
+    1fr;   /* for the membership */
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Adjust the image to fill its first column */
+#memberContainer.list .member-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* optional, if you want to keep rounded corners */
+  margin: 0; /* remove margin if not needed */
+}
+
+/* Margins between paragraphs/links */
+#memberContainer.list .member-card p,
+#memberContainer.list .member-card a {
+  margin: 0.5rem 0;
+}
+
+/* ========== SMALL SCREEN ADJUSTMENTS ========== */
+@media (max-width: 600px) {
+  /* Update member-card in list view to use grid layout */
+  #memberContainer.list .member-card {
+    display: grid;               /* Use grid layout */
+    grid-template-columns: 1fr;  /* Single-column layout */
+    text-align: center;
+    gap: 1rem;                  /* Optional: add space between grid items */
+    padding: 1rem;              /* Maintain padding if needed */
+    margin-bottom: 1rem;        /* Keep bottom margin for spacing between cards */
+  }
+
+  /* Adjust image styling in list view */
+  #memberContainer.list .member-card img {
+    width: 80%;                 /* Make images smaller for better layout */
+    margin: 0 auto 0.5rem;       /* Center image and add bottom margin */
+  }
+
+  /* Adjust view-toggle button font size for small screens */
+  .view-toggle button {
+    font-size: 0.9rem;          /* Slightly smaller buttons for small screens */
+  }
+}
