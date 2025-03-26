@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hong Kong Chamber of Commerce | Home</title>
+  <meta name="description" content="Welcome to the Hong Kong Chamber of Commerce" />
+  <meta name="author" content="Ka Kan Ho" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <!-- Your existing chamber logo image -->
+      <img src="images/skyline_resized_150px.png" alt="Chamber of Commerce Logo" />
+      <h1>Hong Kong Chamber of Commerce</h1>
+    </div>
+    <!-- Hamburger Button -->
+    <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Business Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero">
+      <picture>
+        <!-- WebP source for modern browsers -->
+        <source srcset="images/hongkong_hero.webp" type="image/webp">
+        <!-- Fallback JPEG image -->
+        <img src="images/hongkong_hero.jpg" alt="Scenic view of Hong Kong">
+      </picture>
+      
+      <div class="hero-overlay">
+        <h2>Building Business Connections</h2>
+        <p>Empowering local businesses for a brighter future</p>
+        <a href="join.html" class="cta-button">Join Now</a>
+      </div>
+    </section>      
+
+    <!-- Wrap Events, Current Weather, and Forecast in one container -->
+    <div class="info-sections">
+      <!-- ========== EVENTS SECTION ========== -->
+      <section class="events">
+        <h2>Events</h2>
+        <p>Stay tuned for upcoming events and opportunities!</p>
+      </section>
+
+      <!-- ========== WEATHER SECTION ========== -->
+      <section class="weather">
+        <h2>Current Weather</h2>
+        <div class="current-weather">
+          <p>Temperature: <span id="current-temp"></span></p>
+          <p>Condition: <span id="weather-desc"></span></p>
+          <p>Humidity: <span id="weather-humidity"></span></p>
+          <p>Wind Speed: <span id="weather-wind"></span></p>
+        </div>
+      </section>
+
+      <!-- ========== FORECAST SECTION ========== -->
+      <section class="forecast-section">
+        <h2>Weather Forecast</h2>
+        <div class="forecast-grid" id="forecast">
+          <div class="forecast-day" id="forecastDay1"></div>
+          <div class="forecast-day" id="forecastDay2"></div>
+          <div class="forecast-day" id="forecastDay3"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========== SPOTLIGHT SECTION ========== -->
+    <section class="spotlights">
+      <h2>Featured Members</h2>
+      <div id="spotlightContainer" class="spotlight-container">
+        <!-- Random Gold/Silver members will be injected here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: info@hkchamber.hk</p>
+    <p>WDD 231 | Last Modified: <span id="lastModified"></span></p>
+    <p>&copy; <span id="currentYear"></span> Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="scripts/script-home.js" defer></script>
+</body>
+</html>
