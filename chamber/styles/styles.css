@@ -287,4 +287,34 @@ body {
     border-bottom: 2px solid #DAA520;
     display: inline-block;
     padding-bottom: 0.25rem;
-  }  
+  }
+  /* 1. Mobile adjustments for hero text */
+  @media (max-width: 600px) {
+    .hero-overlay {
+      font-size: 1rem;
+      top: 40%;
+      transform: translate(-50%, -40%);
+      padding: 0 1rem;
+      text-align: center;
+    }
+    .hero-overlay h2 {
+      font-size: 1.25rem;
+    }
+    .hero-overlay p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* 2. Mobile adjustments for forecast */
+  @media (max-width: 600px) {
+    .forecast-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .forecast-day {
+      flex: 1 1 100%;
+      max-width: 300px;
+      margin: 0 auto 1rem; /* center on the line and add spacing */
+    }
+  }    
