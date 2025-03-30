@@ -88,23 +88,37 @@ nav ul li a.active {
   
 /* ========== VIEW TOGGLE SECTION ========== */
 .view-toggle {
-    text-align: center;
-    margin: 1rem 0;
+  text-align: center;
+  margin: 1rem 0;
 }
-    
+
 .view-toggle button {
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
-    border: none;
-    background-color: #66b3ff; /* lighter blue for contrast */
-    color: #000; /* black text */
-    cursor: pointer;
-    border-radius: 5px;
+  padding: 0.6rem;               /* unified size for icon buttons */
+  margin: 0 0.4rem;              /* balanced spacing */
+  border: none;
+  background-color: #66b3ff;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
 }
-    
+
 .view-toggle button:hover {
-    background-color: #ff3b3b; /* lighter red for contrast */
-    color: #000;
+  background-color: #ff3b3b;
+  color: #fff;
+}
+
+.view-toggle svg {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+
+/* ========== SMALL SCREEN HIDE VIEW TOGGLE & HR ========== */
+@media (max-width: 600px) {
+  .view-toggle,
+  hr {
+    display: none;
+  }
 }
   
 /* ========== MEMBER CONTAINER & CARD STYLES ========== */

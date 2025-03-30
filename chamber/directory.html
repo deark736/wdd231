@@ -53,9 +53,23 @@
   <main>
     <!-- View Toggle Section -->
     <section class="view-toggle">
-      <button id="grid">⏹️ Grid View</button>
-      <button id="list">📄 List View</button>
-    </section>
+      <button id="grid" aria-label="Grid View" title="Grid View">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="7" height="7"/>
+          <rect x="14" y="3" width="7" height="7"/>
+          <rect x="3" y="14" width="7" height="7"/>
+          <rect x="14" y="14" width="7" height="7"/>
+        </svg>
+      </button>
+    
+      <button id="list" aria-label="List View" title="List View">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <rect x="4" y="5" width="16" height="2"/>
+          <rect x="4" y="11" width="16" height="2"/>
+          <rect x="4" y="17" width="16" height="2"/>
+        </svg>
+      </button>
+    </section>    
     <hr>
     
     <!-- Member Cards Container -->
