@@ -6,7 +6,20 @@ body {
     margin: 0;
     padding: 0;
 }
-  
+
+/* Visually hidden (accessible but not visible) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* Use Playfair Display for headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
@@ -14,11 +27,21 @@ h1, h2, h3, h4, h5, h6 {
   
 /* ========== HEADER & FOOTER ========== */
 header, footer {
-    background-color: #004080;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-    position: relative; /* For positioning elements like the hamburger button */
+  background-color: #004080;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: relative; /* For positioning elements like the hamburger button */
+}
+
+.logo-container {
+  padding-bottom: 1.5rem;
+}
+
+.chamber-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 700;
 }
   
 /* ========== NAVIGATION ========== */
@@ -492,10 +515,19 @@ fieldset label:first-of-type {
   justify-content: center;
 }
 .join-wrapper {
-  padding: 0 1rem;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .thankyou-wrapper {
   max-width: 800px;
   margin: 2rem auto;
   padding: 0 1rem;
+}
+
+.directory-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
 }

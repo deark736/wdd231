@@ -32,7 +32,7 @@
   <header>
     <div class="logo-container">
       <img src="images/hk-chamber-logo.png" alt="Chamber of Commerce Logo">
-      <h1>Hong Kong Chamber of Commerce</h1>
+      <div class="chamber-title">Hong Kong Chamber of Commerce</div>
     </div>
     <!-- Hamburger Button -->
     <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
@@ -51,31 +51,35 @@
   </header>
 
   <main>
-    <!-- View Toggle Section -->
-    <section class="view-toggle">
-      <button id="grid" aria-label="Grid View" title="Grid View">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-          <rect x="3" y="3" width="7" height="7"/>
-          <rect x="14" y="3" width="7" height="7"/>
-          <rect x="3" y="14" width="7" height="7"/>
-          <rect x="14" y="14" width="7" height="7"/>
-        </svg>
-      </button>
+    <div class="directory-wrapper">
+      <h1>Business Directory</h1>
+
+      <!-- View Toggle Section -->
+      <section class="view-toggle">
+        <button id="grid" aria-label="Grid View" title="Grid View">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="7" height="7"/>
+            <rect x="14" y="3" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/>
+          </svg>
+        </button>
     
-      <button id="list" aria-label="List View" title="List View">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-          <rect x="4" y="5" width="16" height="2"/>
-          <rect x="4" y="11" width="16" height="2"/>
-          <rect x="4" y="17" width="16" height="2"/>
-        </svg>
-      </button>
-    </section>    
-    <hr>
+        <button id="list" aria-label="List View" title="List View">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <rect x="4" y="5" width="16" height="2"/>
+            <rect x="4" y="11" width="16" height="2"/>
+            <rect x="4" y="17" width="16" height="2"/>
+          </svg>
+        </button>
+      </section>    
+      <hr>
     
-    <!-- Member Cards Container -->
-    <article id="memberContainer" class="grid">
-      <!-- Member data will be dynamically injected here via JavaScript -->
-    </article>
+      <!-- Member Cards Container -->
+      <article id="memberContainer" class="grid">
+        <!-- Member data will be dynamically injected here via JavaScript -->
+      </article>
+    </div>
   </main>
 
   <footer>
