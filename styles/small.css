@@ -1,123 +1,128 @@
 /* small.css (Mobile-First) */
-
-/* Basic Resets and Body Styling */
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  /* Header */
-  header {
-    background-color: #005f73;
-    color: #fff;
-    padding: 1rem;
-  }
-  
-  .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* Profile picture remains the same */
-  .profile-pic {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  /* Updated Header Name styling */
-  .header-name {
-    font-size: 1.2rem;
-    margin-left: 0.5rem;
-    flex-grow: 1;
-  }
-  
-  /* Hamburger Menu Button */
-  .hamburger {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  /* Navigation */
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: #0a9396;
-  }
-  
-  /* By default, hide nav on mobile until toggled open */
-  nav.closed {
-    display: none;
-  }
-  
-  nav li a {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Wayfinding / Hover */
-  nav li a:hover,
-  nav li a.active {
-    background-color: #94d2bd;
-    color: #000;
-  }
-  
-  /* Main Content */
-  main {
-    padding: 1rem;
-  }
-  
-  /* This h1 styling applies to the main title ("Home") */
-  main h1 {
-    font-size: 2rem; /* Adjust as needed */
-    margin-bottom: 1rem;
-  }
-  
-  section {
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Course Cards Container */
-  .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  /* Filter Buttons */
-  .filters {
-    margin-bottom: 0.5rem;
-  }
-  
-  button {
-    cursor: pointer;
-  }
-  
-  /* Completed Course Style */
-  .course-card.completed {
-    background-color: #d3f8d3;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    background-color: #005f73;
-    color: #fff;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  
-  .header-name,
-  main h1,
-  h2 {
-    font-family: 'Merriweather', serif;
-  }
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #005f73;
+  color: #fff;
+  padding: 1rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.header-name {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  flex-grow: 1;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0a9396;
+}
+
+nav.closed {
+  display: none;
+}
+
+nav li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li a:hover,
+nav li a.active {
+  background-color: #94d2bd;
+  color: #000;
+}
+
+main {
+  padding: 1rem;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filters {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.course-card.completed {
+  background-color: #d3f8d3;
+}
+
+footer {
+  text-align: center;
+  background-color: #005f73;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.header-name,
+main h1,
+h2 {
+  font-family: 'Merriweather', serif;
+}
+
+/* Hover animation on course cards */
+.course-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effect */
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f73;
+  transform: scale(1.1);
+}
