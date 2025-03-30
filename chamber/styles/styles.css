@@ -370,7 +370,8 @@ form#membershipForm button[type="submit"] {
     margin: 1rem auto;
 }
 form#membershipForm button[type="submit"]:hover {
-    background-color: #ff3b3b;
+  background-color: #ff3b3b;
+  color: #fff;
 }
 
 /* Membership Cards (Join Page) */
