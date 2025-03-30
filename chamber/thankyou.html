@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Hong Kong Chamber of Commerce</title>
+  <meta name="description" content="Thank you for applying to join the Hong Kong Chamber of Commerce">
+  <meta name="author" content="Ka Kan Ho">
+
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="Thank You - Hong Kong Chamber of Commerce" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://deark736.github.io/wdd231/chamber/images/thankyou_image.jpg" />
+  <meta property="og:url" content="https://deark736.github.io/wdd231/chamber/thankyou.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/skyline_resized_150px.png" alt="Chamber of Commerce Logo">
+      <h1>Hong Kong Chamber of Commerce</h1>
+    </div>
+    <!-- Hamburger Button -->
+    <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Business Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="thankyou-wrapper">
+      <h2>Thank You for Your Application!</h2>
+      <p>We appreciate your interest in joining the Hong Kong Chamber of Commerce. Below is a summary of your submitted information:</p>
+    
+      <div id="submissionData">
+        <!-- Submitted data will be populated here via thankyou.js -->
+      </div>
+    
+      <p>If any information is incorrect, please contact us at <a href="mailto:info@hkchamber.hk">info@hkchamber.hk</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact: info@hkchamber.hk</p>
+    <p>WDD 231 | Last Modified: <span id="lastModified"></span></p>
+    <p>&copy; <span id="currentYear"></span> Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+
+  <!-- Include thankyou.js script -->
+  <script src="scripts/thankyou.js" defer></script>
+</body>
+</html>

@@ -5,56 +5,56 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-  }
+}
   
-  /* Use Playfair Display for headings */
-  h1, h2, h3, h4, h5, h6 {
+/* Use Playfair Display for headings */
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
-  }
+}
   
-  /* ========== HEADER & FOOTER ========== */
-  header, footer {
+/* ========== HEADER & FOOTER ========== */
+header, footer {
     background-color: #004080;
     color: #fff;
     padding: 1rem;
     text-align: center;
     position: relative; /* For positioning elements like the hamburger button */
-  }
+}
   
-  /* ========== NAVIGATION ========== */
-  nav {
+/* ========== NAVIGATION ========== */
+nav {
     /* Default: display in a row for larger screens */
-  }
+}
     
-  nav ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 0;
     margin: 0;
     gap: 1rem; /* space between nav items */
-  }
+}
     
-  nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 0.75rem;
     border-radius: 4px; /* for a nicer look */
-  }
+}
     
-  nav ul li a:hover {
+nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
-  }
+}
     
-  /* Highlight the active page */
-  nav ul li a.active {
+/* Highlight the active page */
+nav ul li a.active {
     background-color: #DAA520;
     color: #000; /* switch to black text */
-  }    
+}    
   
-  /* ========== HAMBURGER MENU ========== */
-  .menu-toggle {
+/* ========== HAMBURGER MENU ========== */
+.menu-toggle {
     display: none; /* Hidden on larger screens by default */
     font-size: 1.5rem;
     background: none;
@@ -64,35 +64,35 @@ body {
     position: absolute;
     top: 1.2rem;
     right: 1.2rem;
-  }
+}
     
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
     .menu-toggle {
-      display: block; /* Show the hamburger button on small screens */
+        display: block; /* Show the hamburger button on small screens */
     }
     
     /* Initially hide the nav list on small screens */
     nav ul {
-      display: none;
-      flex-direction: column; 
-      align-items: center;
-      background-color: #004080; /* blends with header color */
-      margin-top: 1rem;
+        display: none;
+        flex-direction: column; 
+        align-items: center;
+        background-color: #004080; /* blends with header color */
+        margin-top: 1rem;
     }
     
     /* When toggled, .show displays the nav list */
     nav ul.show {
-      display: flex;
+        display: flex;
     }
-  }
+}
   
-  /* ========== VIEW TOGGLE SECTION ========== */
-  .view-toggle {
+/* ========== VIEW TOGGLE SECTION ========== */
+.view-toggle {
     text-align: center;
     margin: 1rem 0;
-  }
+}
     
-  .view-toggle button {
+.view-toggle button {
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
     border: none;
@@ -100,104 +100,104 @@ body {
     color: #000; /* black text */
     cursor: pointer;
     border-radius: 5px;
-  }
+}
     
-  .view-toggle button:hover {
+.view-toggle button:hover {
     background-color: #ff3b3b; /* lighter red for contrast */
     color: #000;
-  }
+}
   
-  /* ========== MEMBER CONTAINER & CARD STYLES ========== */
-  #memberContainer {
+/* ========== MEMBER CONTAINER & CARD STYLES ========== */
+#memberContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     padding: 1rem;
-  }
+}
     
-  .member-card {
+.member-card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 1rem;
     text-align: center;
-  }
+}
     
-  .member-card img {
+.member-card img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-  }
+}
     
-  .member-card h3 {
+.member-card h3 {
     margin: 0.5rem 0;
-  }
+}
     
-  /* ========== LIST VIEW STYLING ========== */
-  #memberContainer.list {
+/* ========== LIST VIEW STYLING ========== */
+#memberContainer.list {
     display: block;
-  }
+}
     
-  #memberContainer.list .member-card {
+#memberContainer.list .member-card {
     display: grid;
     grid-template-columns: 100px 1fr 2fr 1fr 1fr 1fr; /* image, name, address, phone, website, membership */
     gap: 1rem;
     margin-bottom: 1rem;
     padding: 1rem;
     text-align: left;
-  }
+}
     
-  #memberContainer.list .member-card img {
+#memberContainer.list .member-card img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     margin: 0;
-  }
+}
     
-  #memberContainer.list .member-card p,
-  #memberContainer.list .member-card a {
+#memberContainer.list .member-card p,
+#memberContainer.list .member-card a {
     margin: 0.5rem 0;
-  }
+}
   
-  /* ========== SMALL SCREEN ADJUSTMENTS ========== */
-  @media (max-width: 600px) {
+/* ========== SMALL SCREEN ADJUSTMENTS ========== */
+@media (max-width: 600px) {
     #memberContainer.list .member-card {
-      display: grid;
-      grid-template-columns: 1fr; /* Single-column layout */
-      text-align: center;
-      gap: 1rem;
-      padding: 1rem;
-      margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 1fr; /* Single-column layout */
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
     }
     
     #memberContainer.list .member-card img {
-      width: 80%;
-      margin: 0 auto 0.5rem;
+        width: 80%;
+        margin: 0 auto 0.5rem;
     }
     
     .view-toggle button {
-      font-size: 0.9rem;
+        font-size: 0.9rem;
     }
-  }
+}
   
-  /* ========== HERO SECTION ========== */
-  .hero {
+/* ========== HERO SECTION ========== */
+.hero {
     position: relative;
     text-align: center;
     overflow: hidden; /* contains the hero image */
-  }
-  .hero img {
+}
+.hero img {
     width: 100%;
     height: auto;
     display: block;
-  }
-  .hero::after {
+}
+.hero::after {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(0, 0, 0, 0.3);
-  }
-  .hero-overlay {
+}
+.hero-overlay {
     position: absolute;
     z-index: 2; /* ensures overlay text stays above the dark overlay */
     top: 50%;
@@ -205,116 +205,282 @@ body {
     transform: translate(-50%, -50%);
     color: #fff;
     text-shadow: 1px 1px 2px #000;
-  }
-  .cta-button {
+}
+.cta-button {
     background-color: #DAA520;
     color: #000;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-  }
+}
   
-  /* ========== WEATHER SECTION ========== */
-  .weather {
+/* ========== WEATHER SECTION ========== */
+.weather {
     padding: 1rem;
     background-color: #f0f8ff; /* light background to highlight */
-  }
-  .forecast-grid {
+}
+.forecast-grid {
     display: flex;
     gap: 1rem;
-  }
-  .forecast-day {
+}
+.forecast-day {
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 0.5rem;
     flex: 1;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  /* ========== SPOTLIGHT SECTION ========== */
-  .spotlights {
+/* ========== SPOTLIGHT SECTION ========== */
+.spotlights {
     padding: 1rem;
-  }
-  .spotlight-container {
+}
+.spotlight-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
-  }
+}
   
-  /* ========== INFO-SECTIONS (Events, Weather, Forecast) ========== */
-  @media (min-width: 800px) {
+/* ========== INFO-SECTIONS (Events, Weather, Forecast) ========== */
+@media (min-width: 800px) {
     .info-sections {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1rem;
-      max-width: 1200px; /* optional: keeps content from stretching too wide */
-      margin: 0 auto;
-      padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        max-width: 1200px; /* optional: keeps content from stretching too wide */
+        margin: 0 auto;
+        padding: 1rem;
     }
-  }
+}
   
-  /* Shared styling for Events, Weather, and Forecast sections */
-  .events, .weather, .forecast-section {
+/* Shared styling for Events, Weather, and Forecast sections */
+.events, .weather, .forecast-section {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-  }
+}
   
-  /* ========== FORECAST ELEMENTS ========== */
-  .forecast-label {
+/* ========== FORECAST ELEMENTS ========== */
+.forecast-label {
     font-weight: bold;
     margin-bottom: 0.5rem;
-  }
-  .forecast-icon {
+}
+.forecast-icon {
     width: 50px; /* adjust size as needed */
     height: auto;
     display: block;
     margin: 0 auto 0.5rem;
-  }
-  .forecast-details {
+}
+.forecast-details {
     font-size: 1rem;
     text-align: center;
-  }
+}
   
-  /* ===== HEADINGS ===== */
-  h2 {
+/* ===== HEADINGS ===== */
+h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     border-bottom: 2px solid #DAA520;
     display: inline-block;
     padding-bottom: 0.25rem;
-  }
-  /* 1. Mobile adjustments for hero text */
-  @media (max-width: 600px) {
+}
+/* 1. Mobile adjustments for hero text */
+@media (max-width: 600px) {
     .hero-overlay {
-      font-size: 1rem;
-      top: 40%;
-      transform: translate(-50%, -40%);
-      padding: 0 1rem;
-      text-align: center;
+        font-size: 1rem;
+        top: 40%;
+        transform: translate(-50%, -40%);
+        padding: 0 1rem;
+        text-align: center;
     }
     .hero-overlay h2 {
-      font-size: 1.25rem;
+        font-size: 1.25rem;
     }
     .hero-overlay p {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  }
+}
   
-  /* 2. Mobile adjustments for forecast */
-  @media (max-width: 600px) {
+/* 2. Mobile adjustments for forecast */
+@media (max-width: 600px) {
     .forecast-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
     .forecast-day {
-      flex: 1 1 100%;
-      max-width: 300px;
-      margin: 0 auto 1rem; /* center on the line and add spacing */
+        flex: 1 1 100%;
+        max-width: 300px;
+        margin: 0 auto 1rem; /* center on the line and add spacing */
     }
-  }    
+}
+
+/* ========== NEW STYLES FOR JOIN AND THANK YOU PAGES ========== */
+
+/* Membership Application Form (join.html) */
+form#membershipForm {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form#membershipForm label {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+form#membershipForm input[type="text"],
+form#membershipForm input[type="email"],
+form#membershipForm input[type="tel"],
+form#membershipForm textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* 🔧 Prevents padding from increasing total width */
+}
+form#membershipForm button[type="submit"] {
+    background-color: #66b3ff;
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+}
+form#membershipForm button[type="submit"]:hover {
+    background-color: #ff3b3b;
+}
+
+/* Membership Cards (Join Page) */
+#membershipCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+#membershipCards .membership-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  width: calc(50% - 1rem);
+  text-align: center;
+
+  /* Animation */
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+#membershipCards .membership-card h3 {
+    margin-bottom: 0.5rem;
+}
+#membershipCards .membership-card p {
+    margin: 0.5rem 0;
+}
+#membershipCards .membership-card a {
+    color: #004080;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Modal Dialogs */
+.membership-modal {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.membership-modal button.close-modal {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Thank You Page Submission Data */
+#submissionData {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#submissionData p {
+    margin: 0.5rem 0;
+}
+/* Responsive Container for Form and Membership Cards */
+.form-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+@media (min-width: 800px) {
+  .form-cards-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* Form takes about 60% of the width, cards 35% */
+  #membershipForm {
+    flex: 0 0 60%;
+  }
+  #membershipCards {
+    flex: 0 0 35%;
+  }
+}
+
+/* Initial Animation for Membership Cards */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#membershipCards .membership-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+#membershipCards .membership-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+#membershipCards .membership-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+#membershipCards .membership-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+fieldset {
+  margin-bottom: 1.5rem; /* Space below the fieldset */
+  padding: 1rem;         /* Internal padding around radio buttons */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+fieldset label:first-of-type {
+  margin-top: 1rem;
+}
+.membership-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.join-wrapper {
+  padding: 0 1rem;
+}
+.thankyou-wrapper {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
