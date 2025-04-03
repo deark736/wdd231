@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover - Hong Kong Chamber of Commerce</title>
+  <meta name="description" content="Discover the vibrant area of Hong Kong with factual information and attractions that appeal to prospective chamber members and visitors.">
+  <meta name="author" content="Ka Kan Ho">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="Discover - Hong Kong Chamber of Commerce" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://deark736.github.io/wdd231/chamber/images/discover_image.jpg" />
+  <meta property="og:url" content="https://deark736.github.io/wdd231/chamber/discover.html" />
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/hk-chamber-logo.png" alt="Chamber of Commerce Logo">
+      <div class="chamber-title">Hong Kong Chamber of Commerce</div>
+    </div>
+    <!-- Hamburger Button -->
+    <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="directory.html">Business Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="discover-wrapper">
+      <!-- The h1 here is the page-specific title -->
+      <h1>Discover Hong Kong</h1>
+      <!-- Optional: A visually hidden h1 can be added if needed for SEO -->
+      <!-- <h1 class="visually-hidden">Discover Hong Kong</h1> -->
+
+      <!-- Aside for displaying a localStorage visit message -->
+      <aside id="visitMessage"></aside>
+      
+      <!-- Section where the discover cards will be injected -->
+      <section class="discover-cards">
+        <!-- 8 cards will be generated dynamically via discover.js -->
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact: info@hkchamber.hk</p>
+    <p>WDD 231 | Last Modified: <span id="lastModified"></span></p>
+    <p>&copy; <span id="currentYear"></span> Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+
+  <!-- Discover page JavaScript -->
+  <script src="scripts/discover.js" defer></script>
+</body>
+</html>

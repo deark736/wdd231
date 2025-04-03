@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "title": "Victoria Peak",
+      "address": "Victoria Peak, Hong Kong",
+      "description": "Experience panoramic views of Hong Kong from the highest point in the city.",
+      "image": "victoria_peak.webp"
+    },
+    {
+      "title": "Star Ferry",
+      "address": "Star Ferry Pier, Tsim Sha Tsui, Hong Kong",
+      "description": "Enjoy a scenic ride across Victoria Harbour on the historic Star Ferry.",
+      "image": "star_ferry.webp"
+    },
+    {
+      "title": "Tsim Sha Tsui Promenade",
+      "address": "Tsim Sha Tsui, Kowloon, Hong Kong",
+      "description": "Stroll along the waterfront and enjoy views of Hong Kong's stunning skyline.",
+      "image": "tsim_sha_tsui_promenade.webp"
+    },
+    {
+      "title": "Mong Kok Market",
+      "address": "Mong Kok, Kowloon, Hong Kong",
+      "description": "Explore vibrant street markets and taste authentic local cuisine in one of Hong Kong's busiest districts.",
+      "image": "mong_kok_market.webp"
+    },
+    {
+      "title": "Temple Street Night Market",
+      "address": "Jordan, Kowloon, Hong Kong",
+      "description": "Experience the bustling energy and local flavors at Hong Kong's famous night market.",
+      "image": "temple_street_night_market.webp"
+    },
+    {
+      "title": "Hong Kong Disneyland",
+      "address": "Lantau Island, Hong Kong",
+      "description": "Enjoy a day of magic and fun at Hong Kong's beloved theme park.",
+      "image": "hk_disneyland.webp"
+    },
+    {
+      "title": "Big Buddha",
+      "address": "Ngong Ping, Lantau Island, Hong Kong",
+      "description": "Visit the majestic Tian Tan Buddha, a symbol of peace and spirituality.",
+      "image": "big_buddha.webp"
+    },
+    {
+      "title": "Man Mo Temple",
+      "address": "Sheung Wan, Hong Kong",
+      "description": "Discover the rich cultural heritage of Hong Kong at the historic Man Mo Temple.",
+      "image": "man_mo_temple.webp"
+    }
+  ]
+}

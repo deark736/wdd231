@@ -531,3 +531,96 @@ fieldset label:first-of-type {
   margin: 0 auto;
   padding: 1.5rem;
 }
+
+/* ========== DISCOVER PAGE STYLES ========== */
+
+/* Container for the discover page content */
+.discover-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Discover Cards Grid */
+.discover-cards {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem 0;
+  /* Small screens: one column */
+  grid-template-columns: 1fr;
+}
+
+/* Medium screens (641px - 1024px): two columns */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large screens (1025px and above): three columns */
+@media (min-width: 1025px) {
+  .discover-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Discover Card Styling */
+.discover-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 641px) {
+  .discover-card:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.discover-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.discover-card figure {
+  margin: 0 0 0.5rem 0;
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+}
+
+.discover-card address {
+  font-style: normal;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.discover-card p {
+  flex-grow: 1;
+  margin-bottom: 0.5rem;
+}
+
+.discover-card button {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  background-color: #66b3ff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.discover-card button:hover {
+  background-color: #ff3b3b;
+  color: #fff;
+}
