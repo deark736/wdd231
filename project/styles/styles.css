@@ -1,0 +1,440 @@
+/* ========== CSS RESET ========== */
+/* Apply box-sizing globally and remove default margins and paddings */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base styles */
+body {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  /* Removed global margin and padding so header and hero touch screen edges */
+}
+
+/* Visually hidden (for SEO) */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #b00000; /* Darker red improves contrast */
+}
+
+/* ========== TYPOGRAPHY & SPACING ========== */
+p,
+.text-column p,
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem; /* Adjust as needed */
+}
+
+/* ========== HEADER & NAVIGATION ========== */
+header {
+  background-color: #990000;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Center logo on small screens */
+@media (max-width: 600px) {
+  .logo-container {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.site-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav {
+  /* No need for text-align here if using flexbox on nav ul */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end; /* Align items to the right */
+
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: #DAA520;
+  color: #000;
+}
+
+/* Default: hamburger hidden */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  nav {
+    width: 100%; /* Ensure nav spans full width */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+}
+
+/* ========== MAIN SECTION ========== */
+main {
+  /* Remove margin so header and hero contact each other */
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  position: relative;
+  display: inline-block; /* Ensures .hero wraps the image properly */
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.hero picture img {
+  display: block; /* Prevents bottom spacing due to default inline-block behavior */
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Overlay that perfectly matches the hero image */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* This will now match the height of the .hero container */
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.hero-text h2,
+.hero-text p {
+  color: #ffffff;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  padding: 0.5rem 1rem;
+}
+
+/* ========== TWO-COLUMN SECTION ========== */
+.two-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.two-column ul {
+  padding-left: 1.5rem;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .two-column {
+    flex-direction: row;
+  }
+  
+  .two-column .column {
+    flex: 1;
+    padding: 0 1rem;
+  }
+}
+
+/* Sections (Intro, Featured, Subscribe) */
+.intro,
+.featured-attraction,
+.subscribe {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.featured-attraction img {
+  margin-bottom: 1rem;
+}
+
+.featured-attraction em {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+/* ========== SUBSCRIBE BUTTON ========== */
+.subscribe button {
+  padding: 0.75rem 1.5rem;
+  background-color: #8B0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.subscribe button:hover {
+  background-color: #DAA520;
+  color: #000;
+}
+
+/* ========== MODAL DIALOG ========== */
+/* Revert to the provided modal styling */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background-color: #fff;
+}
+
+.modal input {
+  margin-bottom: 1rem;
+}
+
+.modal button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.modal button:last-child {
+  margin-right: 0;
+}
+
+/* ========== ATTRACTIONS GRID ========== */
+#attractionsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 20px;
+}
+
+.attraction-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .attraction-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.attraction-card h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #E60012;
+  font-size: 1.1rem; /* Adjust this value as needed */
+}
+
+.attraction-card figure {
+  margin: 0.5rem 0;
+}
+
+.attraction-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.attraction-card address {
+  font-style: normal;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+/* ========== FORMS ========== */
+
+#contactForm {
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1rem 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Thank You page summary styling */
+#submissionData {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Shared form field styles (inputs, labels, buttons) */
+form label {
+  display: block;
+  margin: 1rem 0;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #8B0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+form button:hover {
+  background-color: #DAA520;
+  color: #000;
+}
+
+/* ========== CONTACT PAGE: TWO-COLUMN LAYOUT ========== */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 20px;
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+  }
+  .contact-form, .office-info {
+    flex: 1;
+    padding: 0 1rem;
+  }
+}
+
+.contact-container iframe {
+  margin-top: 1rem;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  padding: 1rem 20px;
+}
+/* ===== About Page Specific ===== */
+.about-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.text-column {
+  flex: 1 1 350px;
+}
+
+.image-column {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.image-column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Ensure spacing around wrapper */
+.content-wrapper {
+  padding: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Larger screens: increase padding */
+@media (min-width: 768px) {
+  .content-wrapper {
+    padding: 2rem;
+  }
+}

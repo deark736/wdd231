@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "title": "Victoria Peak",
+      "address": "Victoria Peak, Hong Kong",
+      "description": "Experience panoramic views of Hong Kong from its highest point.",
+      "image": "victoria_peak.webp"
+    },
+    {
+      "title": "Star Ferry",
+      "address": "Star Ferry Pier, Tsim Sha Tsui, Hong Kong",
+      "description": "Enjoy a scenic ride across Victoria Harbour on the historic Star Ferry.",
+      "image": "star_ferry.webp"
+    },
+    {
+      "title": "Tsim Sha Tsui Promenade",
+      "address": "Tsim Sha Tsui, Kowloon, Hong Kong",
+      "description": "Stroll along the waterfront and admire the stunning skyline of Hong Kong.",
+      "image": "tsim_sha_tsui_promenade.webp"
+    },
+    {
+      "title": "Mong Kok Market",
+      "address": "Mong Kok, Kowloon, Hong Kong",
+      "description": "Explore vibrant street markets and sample authentic local cuisine.",
+      "image": "mong_kok_market.webp"
+    },
+    {
+      "title": "Temple Street Night Market",
+      "address": "Jordan, Kowloon, Hong Kong",
+      "description": "Experience the lively energy and flavors of one of Hong Kong's famed night markets.",
+      "image": "temple_street_night_market.webp"
+    },
+    {
+      "title": "Hong Kong Disneyland",
+      "address": "Lantau Island, Hong Kong",
+      "description": "Dive into a magical world of fun and wonder at Hong Kong Disneyland.",
+      "image": "hk_disneyland.webp"
+    },
+    {
+      "title": "Big Buddha",
+      "address": "Ngong Ping, Lantau Island, Hong Kong",
+      "description": "Visit the majestic Tian Tan Buddha and enjoy a peaceful atmosphere.",
+      "image": "big_buddha.webp"
+    },
+    {
+      "title": "Man Mo Temple",
+      "address": "Sheung Wan, Hong Kong",
+      "description": "Discover ancient traditions at this historic temple in the heart of the city.",
+      "image": "man_mo_temple.webp"
+    },
+    {
+      "title": "Wong Tai Sin Temple",
+      "address": "Wong Tai Sin, Kowloon, Hong Kong",
+      "description": "A vibrant temple renowned for its fortune telling and cultural significance.",
+      "image": "wong_tai_sin.webp"
+    },
+    {
+      "title": "Avenue of Stars",
+      "address": "Tsim Sha Tsui, Kowloon, Hong Kong",
+      "description": "Celebrate Hong Kong’s film industry along this picturesque promenade.",
+      "image": "avenue_of_stars.webp"
+    },
+    {
+      "title": "Ocean Park",
+      "address": "Aberdeen, Hong Kong",
+      "description": "Enjoy thrilling rides, animal exhibits, and spectacular views at Ocean Park.",
+      "image": "ocean_park.webp"
+    },
+    {
+      "title": "Symphony of Lights",
+      "address": "Victoria Harbour, Hong Kong",
+      "description": "Marvel at the dazzling nighttime light show that illuminates the city's skyline.",
+      "image": "symphony_of_lights.webp"
+    },
+    {
+      "title": "Kowloon Walled City Park",
+      "address": "Kowloon, Hong Kong",
+      "description": "Explore the historical site of the former walled city now transformed into a serene park.",
+      "image": "walled_city_park.webp"
+    },
+    {
+      "title": "Ten Thousand Buddhas Monastery",
+      "address": "Shatin, New Territories, Hong Kong",
+      "description": "Admire thousands of Buddha statues in this unique and tranquil monastery setting.",
+      "image": "ten_thousand_buddhas.webp"
+    },
+    {
+      "title": "Golden Bauhinia Square",
+      "address": "Wan Chai, Hong Kong",
+      "description": "Visit this iconic square that celebrates Hong Kong's heritage.",
+      "image": "golden_bauhinia.webp"
+    }
+  ]
+}

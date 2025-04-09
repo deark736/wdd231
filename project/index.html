@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hong Kong Cultural Experience | Home</title>
+  <meta name="description" content="Welcome to the Hong Kong Cultural Experience. Explore Hong Kong's rich heritage, festivals, foods, and landmarks.">
+  <meta name="author" content="Ka Kan Ho">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+  
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="Hong Kong Cultural Experience | Home">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hongkong_hero.webp">
+  <meta property="og:url" content="https://deark736.github.io/wdd231/project/index.html">
+  <meta property="og:description" content="Welcome to the Hong Kong Cultural Experience. Explore the culture of Hong Kong.">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/hk-hero-icon.png" alt="Hong Kong Cultural Experience Icon">
+      <div class="site-title">HK Cultural Experience</div>
+    </div>
+    <nav>
+      <!-- Hamburger menu placed before the nav list -->
+      <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Main content wrapper with internal padding -->
+  <main>
+    <!-- For SEO, you can hide the <h1> visually if desired -->
+    <h1 class="visually-hidden">Hong Kong Cultural Experience</h1>
+    
+    <section class="hero">
+      <picture>
+        <source media="(max-width: 600px)" srcset="images/hongkong_hero_mobile.jpg">
+        <source srcset="images/hongkong_hero.webp" type="image/webp">
+        <img src="images/hongkong_hero.jpg" alt="Scenic view of Hong Kong" loading="lazy">
+      </picture>
+      <!-- Explicit overlay element -->
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <h2>Discover the Heart of Hong Kong</h2>
+        <p>Immerse yourself in vibrant traditions and breathtaking urban landscapes.</p>
+        </div>
+    </section>      
+    
+    <!-- Content wrapper provides spacing for inner page sections -->
+    <div class="content-wrapper">
+      <!-- Two-column section -->
+      <section class="two-column">
+        <div class="column">
+          <h2>Introduction</h2>
+          <p>Welcome to our cultural journey through Hong Kong. Our platform curates captivating stories, images, and events that reveal the city's dynamic fusion of ancient tradition and modern innovation.</p>
+        </div>
+        <div class="column">
+          <h2>Cultural Highlights</h2>
+          <ul>
+            <li>Festivals & Celebrations</li>
+            <li>Historic Temples</li>
+            <li>Street Markets</li>
+            <li>Local Cuisine</li>
+            <li>Contemporary Art</li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- Featured Attraction Section (random) -->
+      <section class="featured-attraction">
+        <h2>Featured Attraction</h2>
+        <div id="featuredAttraction">
+          <!-- Populated by scripts/main.js -->
+        </div>
+      </section>
+      
+      <!-- Newsletter Subscription Trigger -->
+      <section class="subscribe">
+        <button id="subscribeBtn">Subscribe to Newsletter</button>
+      </section>
+    </div>
+    
+    <!-- Modal Dialog for Newsletter Subscription -->
+    <dialog id="subscribeModal" class="modal">
+      <form method="dialog">
+        <h2>Subscribe</h2>
+        <label for="subscriberEmail">Email:</label>
+        <input type="email" id="subscriberEmail" name="subscriberEmail" required>
+        <div class="modal-actions">
+          <button type="submit" id="modalSubmit">Subscribe</button>
+          <button type="button" id="modalClose">Close</button>
+        </div>
+      </form>
+    </dialog>
+  </main>
+  
+  <footer>
+    <p>Contact: info@hkculturalexperience.com | (123) 456-7890</p>
+    <p>&copy; <span id="currentYear"></span> Hong Kong Cultural Experience</p>
+    <p id="lastVisitInfo"></p>
+  </footer>
+  
+  <!-- Scripts -->
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/modal.js"></script>
+</body>
+</html>
